@@ -7,10 +7,10 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name="Especialidad")
+@Table(name="especialidad")
 public class Especialidad {
     @Id
-    private String IdEsp;
-    private String NomEsp;
-    private Double Costo;
+    private String idesp;
+    private String nomesp;
+    private Double costo;
 }

@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<head th:insert="layout::head">
+
+</head>
+<body>
+
+<nav th:insert="layout::menu"></nav>
+
+<div class="card mx-auto" style="max-width: 600px; margin-top: 30px;">
+  <div class="card-body">
+    <h5 class="card-title">Registrar Especialidad</h5>
+    <form th:action="@{/Especialidad/frmRegEspecialidad}" method="post" th:object="${especialidadForm}">
+      <div class="mb-3">
+        <label for="IdEsp" class="form-label">Id</label>
+        <input type="text" class="form-control" id="IdEsp" name="IdEsp" placeholder="Introducior Id Especialida" th:field="*{idEsp}" />
+        <label for="nomEsp" class="form-label">Id</label>
+        <input type="text" class="form-control" id="nomEsp" name="nomEsp" placeholder="Introducior Nombre Especialidad" th:field="*{nomEsp}" />
+
+        <label for="Costo" class="form-label">Id</label>
+        <input type="number" class="form-control" id="Costo" name="Costo" placeholder="Introducior Costro" th:field="*{costo}" />
+
+      </div>
+
+      <!-- other form fields here -->
+
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
